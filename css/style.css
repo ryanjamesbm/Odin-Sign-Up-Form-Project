@@ -1,0 +1,108 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+/* END OF CSS RESET */
+
+
+  .container{
+    background-color:blue;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*
+  Styling image and logo section
+  */
+
+  .item-1{
+    background-color: orange;
+    border: 5px solid green;
+    width: 30vw;
+    height: 100vh;
+  }
+
+    /* Image and logo banner */
+
+  #banner{
+    background-color: lightslategray;
+    margin-top: 20vh;
+    height: 15vh;
+  }
+
+  /*
+  Styling form section
+  */
+
+  .item-2{
+    background-color: orange;
+    border: 5px solid green;
+    width: 70vw;
+    height: 100vh;
+  }
+
+    /* Introduction text section */
+
+  #intro-text{
+    height: 35vh;
+    background-color: #d8d6d6;
+  }
+
+    /* Main form section */
+
+  #form{
+    background-color: white;
+    height: 30vh;
+  }
+
+    /* Button submission section */
+
+  #form-submit{
+    height: 35vh;
+    background-color: #d8d6d6;
+  }

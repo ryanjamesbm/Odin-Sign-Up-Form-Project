@@ -109,8 +109,6 @@ body{
   */
 
   .item-2{
-    background-color: orange;
-    border: 5px solid green;
     width: 70vw;
     height: 100vh;
   }
@@ -118,8 +116,13 @@ body{
     /* Introduction text section */
 
   #intro-text{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;  /* Align items to the left of the container */
+    justify-content: flex-end; /* Align items to the bottom */
     height: 35vh;
     background-color: #d8d6d6;
+    padding: 10px;
   }
 
     /* Main form section */

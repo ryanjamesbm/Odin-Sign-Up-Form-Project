@@ -1,3 +1,6 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -49,6 +52,15 @@
 
 /* END OF CSS RESET */
 
+/* Define default values */
+:root{
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Applying default variables to whole page */
+body{
+    font-family: var(--system-ui);
+}
 
   .container{
     background-color:blue;
@@ -61,18 +73,35 @@
   */
 
   .item-1{
-    background-color: orange;
-    border: 5px solid green;
+    background-image: url('../images/cyberpunk.jpg'); /* Path to image file */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background stay fixed when scrolling */
     width: 30vw;
-    height: 100vh;
+    height: 100vh; 
   }
 
     /* Image and logo banner */
 
   #banner{
-    background-color: lightslategray;
+    background-color: rgba(119, 136, 153, 0.6);
     margin-top: 20vh;
     height: 15vh;
+    padding: 5px;
+    font-size: 1rem;
+    display: flex; /* Allows me to adjust the positioning of items within */
+    flex-direction: column; /* Stacks the content */
+    align-items: center; /* Horizontal centering */
+    text-align: center;
+    justify-content: center; /* Vertical centering */
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: clamp(0.5rem, 1.6vw, 2.5rem); /* Restricts the size of text to fit */
+  }
+
+  #banner img{
+    width: 9rem;
   }
 
   /*

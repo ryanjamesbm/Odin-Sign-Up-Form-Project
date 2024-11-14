@@ -65,6 +65,7 @@ body{
   .container{
     display: flex;
     height: 100vh;
+    overflow: hidden;
   }
 
   /*
@@ -85,7 +86,7 @@ body{
 
   #banner{
     background-color: rgba(65, 78, 92, 0.6);
-    margin-top: 20vh;
+    margin-top: 15vh;
     height: 15vh;
     color: white;
     font-family: "Orbitron", sans-serif;
@@ -115,9 +116,9 @@ body{
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start;  /* Align items to the left of the container */
     justify-content: flex-end; /* Align items to the bottom */
-    height: 35vh;
+    height: 30vh;
     background-color: #d8d6d6;
-    padding: 1em 2em;
+    padding: 1em;
     font-size: 0.8em;
   }
 
@@ -125,7 +126,7 @@ body{
 
     #form{
       background-color: white;
-      height: 50vh;
+      height: 65vh;
     }
 
     fieldset{
@@ -134,7 +135,7 @@ body{
       border: none;
       background: white;
       gap: 10px;
-      padding: 1em 2em;
+      padding: 0.5em 0.5em 0.5em 0.5em;
     } 
 
     legend{
@@ -155,6 +156,7 @@ body{
 
     #submit{
       background:#d8d6d6;
+      padding-bottom: 100%;
     }
 
     #submit button{
@@ -164,7 +166,7 @@ body{
       border-radius: 10px;
       padding: 5px 20px 5px 20px;
       font-size: 0.8em;
-      margin-bottom: 5px;
+      margin: 10px 0 10px 0;
     }
     
     /* Button submission section */

@@ -73,7 +73,7 @@ body{
   */
 
   .item-1{
-    background-image: url('../images/cyberpunk.jpg'); /* Path to image file */
+    background-image: url('../images/halie-west-25xggax4bSA-unsplash.jpg'); /* Path to image file */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -127,14 +127,39 @@ body{
 
     /* Main form section */
 
-  #form{
-    background-color: white;
-    height: 30vh;
-  }
+    #form{
+      background-color: white;
+    }
 
+    fieldset{
+      display: flex;
+      flex-wrap: wrap;
+      border: none;
+      background: white;
+      gap: 10px;
+      padding: 1em 2em;
+      margin:0;
+    } 
+
+    legend{
+      font-size: 1.25em;
+    }
+
+    label{
+      letter-spacing: 1px;
+      font-size: 0.7em;
+    }
+
+    input{
+      display:block;
+      padding: .2em;
+      border: solid 1px #d2cfcf;
+      border-radius: 5px;
+    }
+    
     /* Button submission section */
 
   #form-submit{
-    height: 35vh;
+    height: 100%;
     background-color: #d8d6d6;
   }

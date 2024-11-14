@@ -63,9 +63,8 @@ body{
 }
 
   .container{
-    background-color:blue;
     display: flex;
-    justify-content: center;
+    height: 100vh;
   }
 
   /*
@@ -85,23 +84,19 @@ body{
     /* Image and logo banner */
 
   #banner{
-    background-color: rgba(119, 136, 153, 0.6);
+    background-color: rgba(65, 78, 92, 0.6);
     margin-top: 20vh;
     height: 15vh;
-    padding: 5px;
-    font-size: 1rem;
-    display: flex; /* Allows me to adjust the positioning of items within */
-    flex-direction: column; /* Stacks the content */
-    align-items: center; /* Horizontal centering */
-    text-align: center;
-    justify-content: center; /* Vertical centering */
     color: white;
     font-family: "Orbitron", sans-serif;
-    font-size: clamp(0.5rem, 1.6vw, 2.5rem); /* Restricts the size of text to fit */
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; /* Restricts the size of text to fit */
+    display: flex;
   }
 
   #banner img{
-    width: 9rem;
+    height: 12vh;
   }
 
   /*
@@ -122,13 +117,15 @@ body{
     justify-content: flex-end; /* Align items to the bottom */
     height: 35vh;
     background-color: #d8d6d6;
-    padding: 10px;
+    padding: 1em 2em;
+    font-size: 0.8em;
   }
 
     /* Main form section */
 
     #form{
       background-color: white;
+      height: 50vh;
     }
 
     fieldset{
@@ -138,10 +135,10 @@ body{
       background: white;
       gap: 10px;
       padding: 1em 2em;
-      margin:0;
     } 
 
     legend{
+      padding-top: 0.7em;
       font-size: 1.25em;
     }
 
@@ -151,15 +148,27 @@ body{
     }
 
     input{
-      display:block;
-      padding: .2em;
+      display: block;
       border: solid 1px #d2cfcf;
       border-radius: 5px;
+    }
+
+    #submit{
+      background:#d8d6d6;
+    }
+
+    #submit button{
+      background-color: #596D48;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      font-size: 0.8em;
+      margin-bottom: 5px;
     }
     
     /* Button submission section */
 
-  #form-submit{
-    height: 100%;
+  #footer{
     background-color: #d8d6d6;
   }
